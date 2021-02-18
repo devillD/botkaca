@@ -14,7 +14,7 @@ RUN apt -qq install -y curl git wget \
 RUN pip3 install -q --ignore-installed distlib pipenv
 
 COPY requirements.txt .
-RUN RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY bot bot
 
