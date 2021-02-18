@@ -10,7 +10,7 @@ ENV TZ=Asia/Dhaka
 
 RUN apt -qq install -y curl git wget \
     python3 python3-pip \ 
-    libffi libffi-dev musl-dev \ 
+    libffi6 libffi-dev musl-dev \ 
     gcc aria2 ffmpeg
 RUN pip3 install -q --ignore-installed distlib pipenv
 
