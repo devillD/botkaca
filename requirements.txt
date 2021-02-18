@@ -1,3 +1,4 @@
 pyrogram
 tgcrypto
 aria2p
+python-telegram-bot
