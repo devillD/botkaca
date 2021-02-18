@@ -7,7 +7,6 @@ RUN pip3 install -q --ignore-installed distlib pipenv
 RUN python3 -m venv /app/venv
 
 ENV PATH="/app/venv/bin:$PATH" VIRTUAL_ENV="/app/venv"
-SHELL ["/bin/bash", "-c"]
 COPY requirements.txt .
 RUN pip3 install -q -r requirements.txt
 
