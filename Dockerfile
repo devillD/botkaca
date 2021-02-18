@@ -21,7 +21,7 @@ RUN apk --no-cache -q add \
     python3 libffi \
     aria2 \
     ffmpeg
-SHELL ["/bin/bash"]
+RUN ["/bin/bash"]
 COPY --from=prepare_env /app/venv venv
 COPY bot bot
 
