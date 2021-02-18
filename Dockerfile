@@ -7,7 +7,7 @@ RUN apt -qq update
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Dhaka
-
+RUN apt-cache search libffi
 RUN apt -qq install -y curl git wget \
     python3 python3-pip \ 
     libffi6 libffi-dev musl-dev \ 
