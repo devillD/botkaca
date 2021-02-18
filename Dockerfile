@@ -16,6 +16,6 @@ RUN pip3 install -q --ignore-installed distlib pipenv
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-COPY bot bot
+COPY . .
 
 CMD ./start.sh
