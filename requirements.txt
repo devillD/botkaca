@@ -3,3 +3,4 @@ tgcrypto
 aria2p
 python-telegram-bot
 telegram
+cryptography
